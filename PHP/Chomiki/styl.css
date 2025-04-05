@@ -1,0 +1,50 @@
+* {
+  font-family: "Helvetica";
+}
+
+.baner,
+.stopka {
+  background-color: saddlebrown;
+  color: white;
+  text-align: center;
+  padding: 7px;
+}
+
+.lewy-menu {
+  background-color: peru;
+  width: 80%;
+  height: 40px;
+  padding-top: 20px;
+  float: left;
+}
+
+.lewy-main {
+  width: 80%;
+  height: 700px;
+  font-size: 120%;
+  overflow: auto;
+}
+
+.prawy {
+  background-color: peru;
+  color: white;
+  width: 20%;
+  height: 760px;
+  float: right;
+}
+
+a {
+  color: #ddd;
+  padding-left: 90px;
+  font-size: 140%;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+img {
+  float: right;
+  margin: 30px;
+}
