@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli('loclahost', 'root', '', 'terminarz')
+    $conn = new mysqli('localhost', 'root', '', 'terminarz')
 ?>
 
 <!DOCTYPE html>
