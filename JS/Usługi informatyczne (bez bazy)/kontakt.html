@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firma IT</title>
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="logo.png" />
+  </head>
+  <body>
+    <div class="strona">
+      <div class="logo">
+        <img src="logo.png" alt="firma it" />
+      </div>
+      <div class="menu">
+        <a href="index.html">Strona Główna</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="baner">
+        <img src="animacja.gif" alt="Usługi informatyczne" />
+      </div>
+      <div class="glowny">
+        <h2>Kontakt</h2>
+        <table>
+          <tr>
+            <td><label for="imie">Imię: </label></td>
+            <td><input type="text" name="imie" id="imie" /></td>
+          </tr>
+          <tr>
+            <td><label for="nazwisko">Nazwisko: </label></td>
+            <td><input type="text" name="nazwisko" id="nazwisko" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email: </label></td>
+            <td><input type="text" name="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="zgloszenie">Zgłoszenie: </label></td>
+            <td>
+              <textarea
+                name="zgloszenie"
+                id="zgloszenie"
+                cols="40"
+                rows="40"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" name="zgody" id="zgody" /><label
+                for="zgody"
+                >Zapoznałem/am się z regulaminem</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="reset" onclick="reset()">Resetuj</button
+              ><button type="submit" onclick="przeslij()">Prześlij</button>
+            </td>
+          </tr>
+        </table>
+        <hr />
+        <p id="wynik"></p>
+        <script src="skrypt.js"></script>
+      </div>
+      <div class="stopka">Autor strony: <b>07262904730</b></div>
+    </div>
+  </body>
+</html>
