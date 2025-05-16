@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <div class="boczny">
+      <img src="./pliki/obraz.jpg" alt="promocje" />
+      <h2>Sprawdź promocje</h2>
+      <table>
+        <tr>
+          <th>co?</th>
+          <th>ile taniej?</th>
+        </tr>
+        <tr>
+          <td>ubrania</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>buty</td>
+          <td>25%</td>
+        </tr>
+      </table>
+    </div>
+    <div class="baner">
+      <h1>Zarejestruj sie w sklepie</h1>
+    </div>
+    <div class="glowny">
+      <button onclick="klient()">Klient</button>
+      <button onclick="adres()">Adres</button>
+      <button onclick="kontakt()">Kontakt</button>
+
+      <div class="glowny1">
+        <p>Imię</p>
+        <input type="text" name="imie" id="imie" placeholder="Wpisz dane..." />
+        <p>Nazwisko</p>
+        <input type="text" name="nazwisko" id="nazwisko" />
+        <p>Data urodzenia</p>
+        <input type="date" name="data" id="data" />
+      </div>
+
+      <div class="glowny2">
+        <p>Ulica</p>
+        <input type="text" name="ulica" id="ulica" />
+        <p>Numer</p>
+        <input type="number" name="numer" id="numer" />
+        <p>Miasto</p>
+        <input type="text" name="miasto" id="miasto" />
+      </div>
+
+      <div class="glowny3">
+        <p>Numer komórkowy</p>
+        <input type="tel" name="telefon" id="telefon" /><br />
+        <input type="checkbox" name="rodo" id="rodo" />
+        <label for="rodo">Akceptuję RODO</label><br />
+        <button onclick="zatwierdz()">Zatwierdź dane</button>
+      </div>
+    </div>
+    <div class="pasek">
+      <div></div>
+    </div>
+    <div class="stopka">
+      <h4>Rejestrację do sklepu wykonał: 07262904730</h4>
+    </div>
+    <script src="skrypt.js"></script>
+  </body>
+</html>
