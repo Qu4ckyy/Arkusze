@@ -1,0 +1,53 @@
+body {
+  font-family: Georgia;
+  color: white;
+}
+
+.baner,
+.stopka {
+  background-color: #824555;
+  text-align: center;
+  padding: 20px;
+}
+
+.lewy,
+.glowny {
+  width: 30%;
+  height: 350px;
+  float: left;
+}
+
+.lewy {
+  background-color: #a26475;
+}
+
+.glowny {
+  background-color: #824555;
+}
+
+.prawy {
+  background-color: #a26470;
+  width: 40%;
+  height: 350px;
+  overflow-y: auto;
+  float: left;
+}
+
+.stopka {
+  clear: both;
+}
+
+img {
+  float: left;
+  width: 50px;
+}
+
+table,
+p,
+dt {
+  margin: 10px;
+}
+
+dt {
+  padding-top: 20px;
+}
