@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="styl6.css" />
+  </head>
+  <body>
+    <div id="lewy">
+      <h1>Konfigurator stylu</h1>
+      <p>Podaj kolor tła</p>
+      <br />
+      <button class="indigo" onclick="tlo('indigo')">Indigo</button>
+      <button class="steelblue" onclick="tlo('steelblue')">SteelBlue</button>
+      <button class="olive" onclick="tlo('olive')">Olive</button>
+      <p>Podaj kolor czcionki</p>
+      <br />
+      <select name="czcionka" id="czcionka" onchange="czcionka(this.value)">
+        <option value="white">White</option>
+        <option value="tan">Tan</option>
+        <option value="bisque">Bisque</option>
+        <option value="plum">Plum</option>
+      </select>
+      <p>Podaj rozmiar czcionki w procentach, np. 200%</p>
+      <br />
+      <input
+        type="text"
+        id="size"
+        placeholder="100%"
+        onchange="rozmiar(this.value)"
+      />
+      <p>Czy rysunek ma mieć ramkę?</p>
+      <br />
+      <input
+        type="checkbox"
+        name="border"
+        id="border"
+        checked
+        onchange="ramka(this.checked)"
+      />
+      <label for="rysuj">Rysuj ramkę</label>
+      <p>Jaki jest typ punktora listy?</p>
+      <br />
+      <div class="radio">
+        <input
+          type="radio"
+          name="punktor"
+          id="disk"
+          checked
+          onchange="punktor(this.value)"
+          value="disc"
+        />
+        <label for="disk">dysk</label>
+        <input
+          type="radio"
+          name="punktor"
+          id="square"
+          onchange="punktor(this.value)"
+          value="square"
+        />
+        <label for="square">kwadrat</label>
+        <input
+          type="radio"
+          name="punktor"
+          id="circle"
+          onchange="punktor(this.value)"
+          value="circle"
+        />
+        <label for="circle">okrąg</label>
+      </div>
+    </div>
+    <div id="prawy">
+      <img id="image" src="./Pliki/gibraltar.jpg" alt="pólwysep Gibraltar" />
+      <ul id="lista">
+        <li>element 1</li>
+        <li>element 2</li>
+        <li>element 3</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="stopka">
+      <p>Autor: 07262904730</p>
+    </div>
+    <script src="skrypt.js"></script>
+  </body>
+</html>
